@@ -73,3 +73,31 @@ body {
 /*********************
       MAIN
 **********************/
+
+.main-section {
+  background-color: #0282f9;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+
+.row .col {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.col img {
+  width: 2.5rem;
+}
+
+.col h3 {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
