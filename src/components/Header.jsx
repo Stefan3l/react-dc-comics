@@ -13,9 +13,7 @@ export default function Header() {
                   <a href="#">Characters</a>
                 </li>
                 <li>
-                  <a className="active" href="#">
-                    Comics
-                  </a>
+                  <a href="#">Comics</a>
                 </li>
                 <li>
                   <a href="#">Movies</a>
@@ -44,7 +42,6 @@ export default function Header() {
               </ul>
             </div>
           </div>
-          <div className="bar"></div>
         </div>
       </section>
       <section className="section-header-second">
