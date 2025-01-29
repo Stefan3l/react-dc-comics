@@ -1,3 +1,5 @@
+import navElements from "./navHeader/navElements";
+
 export default function Header() {
   return (
     <header>
@@ -8,38 +10,15 @@ export default function Header() {
               <img src="./image/dc-logo.png" alt="logo" />
             </div>
             <div className="menu-header">
-              <ul>
-                <li>
-                  <a href="#">Characters</a>
-                </li>
-                <li>
-                  <a href="#">Comics</a>
-                </li>
-                <li>
-                  <a href="#">Movies</a>
-                </li>
-                <li>
-                  <a href="#">TV</a>
-                </li>
-                <li>
-                  <a href="#">Games</a>
-                </li>
-                <li>
-                  <a href="#">Collectibles</a>
-                </li>
-                <li>
-                  <a href="#">Videos</a>
-                </li>
-                <li>
-                  <a href="#">Fans</a>
-                </li>
-                <li>
-                  <a href="#">News</a>
-                </li>
-                <li>
-                  <a href="#">Shop</a>
-                </li>
-              </ul>
+              {
+                <ul>
+                  {navElements.map((elm, id) => (
+                    <li key={id}>
+                      <a href={elm.url}>{elm.text}</a>
+                    </li>
+                  ))}
+                </ul>
+              }
             </div>
           </div>
         </div>
