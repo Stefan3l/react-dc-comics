@@ -1,7 +1,8 @@
 import DcComics from "./elmFooter/DcComics";
-import shop from "./elmFooter/shop";
+import Shop from "./elmFooter/shop";
 import Dc from "./elmFooter/Dc";
-import sites from "./elmFooter/sites";
+import Sites from "./elmFooter/sites";
+import MapListItems from "./mapListItems";
 
 export default function Footer() {
   return (
@@ -12,49 +13,17 @@ export default function Footer() {
             <div className="col-footer row-menu-footer">
               <div className="col-menu-footer">
                 <h4>Dc Comics</h4>
-                {
-                  <ul>
-                    {DcComics.map((elm, id) => (
-                      <li key={id}>
-                        <a href={elm.url}>{elm.text}</a>
-                      </li>
-                    ))}
-                  </ul>
-                }
+                <MapListItems items={DcComics} />
                 <h4>Shop</h4>
-                {
-                  <ul>
-                    {shop.map((elm, id) => (
-                      <li key={id}>
-                        <a href={elm.url}>{elm.text}</a>
-                      </li>
-                    ))}
-                  </ul>
-                }
+                <MapListItems items={Shop} />
               </div>
               <div className="col-menu-footer">
                 <h4>DC</h4>
-                {
-                  <ul>
-                    {Dc.map((elm, id) => (
-                      <li key={id}>
-                        <a href={elm.url}>{elm.text}</a>
-                      </li>
-                    ))}
-                  </ul>
-                }
+                <MapListItems items={Dc} />
               </div>
               <div className="col-menu-footer">
                 <h4>Sites</h4>
-                {
-                  <ul>
-                    {sites.map((elm, id) => (
-                      <li key={id}>
-                        <a href={elm.url}>{elm.text}</a>
-                      </li>
-                    ))}
-                  </ul>
-                }
+                <MapListItems items={Sites} />
               </div>
             </div>
             <div className="col-footer img-container">

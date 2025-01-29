@@ -18,31 +18,31 @@ export default [
   },
 
   {
-    id: 3,
+    id: 4,
     url: "#",
     text: "TV",
   },
 
   {
-    id: 4,
+    id: 5,
     url: "#",
     text: "Games",
   },
 
   {
-    id: 5,
+    id: 6,
     url: "#",
     text: "Collectibles",
   },
 
   {
-    id: 6,
+    id: 7,
     url: "#",
     text: "Videos",
   },
 
   {
-    id: 7,
+    id: 8,
     url: "#",
     text: "Fans",
   },

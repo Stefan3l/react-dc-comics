@@ -1,4 +1,5 @@
 import navElements from "./navHeader/navElements";
+import MapListItems from "./mapListItems";
 
 export default function Header() {
   return (
@@ -10,15 +11,7 @@ export default function Header() {
               <img src="./image/dc-logo.png" alt="logo" />
             </div>
             <div className="menu-header">
-              {
-                <ul>
-                  {navElements.map((elm, id) => (
-                    <li key={id}>
-                      <a href={elm.url}>{elm.text}</a>
-                    </li>
-                  ))}
-                </ul>
-              }
+              <MapListItems items={navElements} />
             </div>
           </div>
         </div>
