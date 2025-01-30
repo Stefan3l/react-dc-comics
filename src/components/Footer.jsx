@@ -12,18 +12,14 @@ export default function Footer() {
           <div className="row-footer">
             <div className="col-footer row-menu-footer">
               <div className="col-menu-footer">
-                <h4>Dc Comics</h4>
-                <MapListItems items={DcComics} />
-                <h4>Shop</h4>
-                <MapListItems items={Shop} />
+                <MapListItems items={DcComics} title="Dc Comics" />
+                <MapListItems items={Shop} title="Shop" />
               </div>
               <div className="col-menu-footer">
-                <h4>DC</h4>
-                <MapListItems items={Dc} />
+                <MapListItems items={Dc} title="DC" />
               </div>
               <div className="col-menu-footer">
-                <h4>Sites</h4>
-                <MapListItems items={Sites} />
+                <MapListItems items={Sites} title="Sites" />
               </div>
             </div>
             <div className="col-footer img-container">

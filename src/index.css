@@ -60,9 +60,119 @@ body {
 /*********************
       MAIN
 **********************/
+.first-section {
+  background-image: url("../image/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 17.5rem;
+}
+
+.second-section {
+  background-color: #1c1c1c;
+}
 
 .main-section {
   background-color: #0282f9;
+}
+
+/*********************
+     BADGE TYPES
+**********************/
+
+.badge-menu {
+  position: relative;
+}
+
+.badge-menu .badge {
+  background-color: #027eec;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding: 0.625rem 1.25rem;
+  position: absolute;
+  top: -1.125rem;
+  left: 0;
+}
+/*********************
+     BUTTON TYPES
+**********************/
+
+.button {
+  text-align: center;
+  padding-bottom: 1.875rem;
+}
+
+.button button {
+  cursor: pointer;
+  padding: 0.5rem 1.25rem;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+}
+
+.button.btn-primary {
+  background-color: #0282f9;
+}
+
+.button.btn-secondary {
+  background-color: grey;
+}
+
+.button.btn-succes {
+  background-color: green;
+}
+
+.button button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 60px 15px rgba(2, 130, 249, 0.9);
+}
+/*********************
+      MAIN CARD
+**********************/
+
+.row-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1.875rem;
+  padding: 3.125rem 0.875rem;
+  align-items: stretch;
+}
+
+.row-card .col-card {
+  display: flex;
+  flex-direction: column;
+  max-width: calc((100% - 9.375rem) / 6);
+  width: calc((100% - 9.375rem) / 6);
+  margin-bottom: 1.875rem;
+}
+
+.col-card .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.wraper-img {
+  width: 100%;
+  height: 11rem;
+  overflow: hidden;
+}
+
+.wraper-img:hover {
+  transform: scale(1.1);
+}
+
+.row-card .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.row-card .card h1 {
+  color: #fff;
+  font-size: 0.875rem;
+  margin-top: 1rem;
 }
 
 .row {

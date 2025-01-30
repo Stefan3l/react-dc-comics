@@ -16,11 +16,7 @@ export default function Header() {
           </div>
         </div>
       </section>
-      <section className="section-header-second">
-        <div className="container">
-          <h1>--&gt; Content goes here &lt;--</h1>
-        </div>
-      </section>
+      <section className="section-header-second"></section>
     </header>
   );
 }

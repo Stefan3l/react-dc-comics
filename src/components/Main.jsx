@@ -1,6 +1,23 @@
+import CardsComics from "./elmMain/CardsComics";
+import Button from "./elmMain/Button";
+import Badge from "./elmMain/Badge";
+import SectionBackground from "./elmMain/SectionBackground";
+
 export default function Main() {
   return (
     <main>
+      <SectionBackground type="first-section" />
+      <section className="second-section">
+        <div className="container">
+          <div className="badge-menu">
+            <Badge name="Current Series" type="badge" />
+          </div>
+          <CardsComics />
+          <div className="button">
+            <Button type="btn-primary" name="Load More" />
+          </div>
+        </div>
+      </section>
       <section className="main-section">
         <div className="container">
           <div className="row">
