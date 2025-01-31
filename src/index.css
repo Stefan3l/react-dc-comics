@@ -110,15 +110,15 @@ body {
   text-transform: uppercase;
 }
 
-.button.btn-primary {
+.button .btn-primary {
   background-color: #0282f9;
 }
 
-.button.btn-secondary {
+.button .btn-secondary {
   background-color: grey;
 }
 
-.button.btn-succes {
+.button .btn-succes {
   background-color: green;
 }
 

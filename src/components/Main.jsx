@@ -14,7 +14,7 @@ export default function Main() {
           </div>
           <CardsComics />
           <div className="button">
-            <Button type="btn-primary" name="Load More" />
+            <Button className="btn-primary">Load More</Button>
           </div>
         </div>
       </section>
